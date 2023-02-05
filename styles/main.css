@@ -13,7 +13,7 @@ body { background-color: #12262c; transition: 0.31s; }
 ********************************** */
 * { font-family: 'Oxygen', sans-serif; }
 
-.floor, .ceil, .trunc, .round {
+.floor, .ceil, .trunc, .round, .random {
     font-size: 4.0rem;
     color:rgba(195, 218, 178, 0.818)
 }
