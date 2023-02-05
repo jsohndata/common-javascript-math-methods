@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./styles/main.css" />
+
+<title>4 common Math methods: Rand, Ceil, Floor, and Trunc</title>
+</head>
+
+
+<body>
+<div class="container">
+    <header>
+        <h1>Random, Ceil, Floor, and Trunc</h1>
+    </header>
+
+    <main>
+        <div style="flex-basis: 100%;" onclick="render()" class="btn btn-primary tooltip">
+            <h2>Random</h2>
+            <p class="caption">Click to generate new random</p>
+            <p class="random"></p>
+        </div>
+
+        <div>
+            <h2>Integer</h2>
+            <p class="integer">10</p>
+        </div>
+
+        <div>
+            <h2>Random * Integer</h2>
+            <p class="randomWithInt"></p>
+        </div>        
+    </main>
+
+    <section>        
+        <div>
+            <h2>Floor (Random * Integer)</h2>
+            <p class="caption"><strong>Rounds down</strong> to its nearest integer</p>
+            <p class="floor"></p>
+        </div>
+
+        <div>
+            <h2>Ceil (Random * Integer)</h2>
+            <p class="caption"><strong>Rounds up</strong> to its nearest integer</p>
+            <p class="ceil"></p>            
+        </div>
+
+        <div>
+            <h2>Round (Random * Integer)</h2>
+            <p class="caption">Returns to the nearest integer</p>
+            <p class="round"></p>
+        </div>
+
+        <div>
+            <h2>Trunc (Random * Integer)</h2>
+            <p class="caption">Returns the integer of the value</p>
+            <p class="trunc"></p>
+        </div>        
+    </section>
+
+    <footer>
+        <p><small><a href="https://github.com/jsohndata/random-ceil-floor-trunc" target="_blank">See code in Github</a></small></p>
+    </footer>
+</div>
+
+<script src="./scripts/main.js"></script>
+
+<script>
+    render();
+</script>
+
+</body>
+</html>

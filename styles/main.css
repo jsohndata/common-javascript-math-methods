@@ -1,0 +1,120 @@
+/* Normalize
+********************************** */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: inherit; }
+
+
+/* General
+********************************** */
+html { scroll-behavior: smooth; }
+body { background-color: #12262c; transition: 0.31s; }
+
+
+/* Font
+********************************** */
+* { font-family: 'Oxygen', sans-serif; }
+
+.floor, .ceil, .trunc, .round {
+    font-size: 4.0rem;
+    color:rgba(195, 218, 178, 0.818)
+}
+
+h1 { 
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: rgb(246, 246, 246);
+    margin-bottom: 30px;
+}
+
+h2 { 
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(178, 199, 218);
+}
+
+P { 
+    font-size: 2.2rem;
+    color: rgba(66, 246, 255, 0.655);
+}
+
+p.caption {
+    font-size: 1.0rem;
+    margin-top: 0.5em;
+    font-weight: 500;
+}
+
+
+
+
+/* Container
+********************************** */
+.container { padding: 60px; }
+
+
+/* Main
+********************************** */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* when the user clicks the text won't be selectable */
+    user-select: none;
+}
+
+main > div:first-child {
+    cursor: pointer;
+}
+
+main > div {
+    flex: 1 1 20%;
+    border: 2px solid #c45de0;
+
+}
+
+main > div,
+section > div {
+    margin: 8px;
+    padding: 1.3em;
+    border-radius: 6px;
+    background-color: #2e3c41;
+    transform: scale(1.0);
+    transition: transform 0.31s ease-in-out;
+}
+
+main > div:hover,
+section > div:hover {
+    filter: drop-shadow(0 0 10px rgba(176, 240, 37, 0.382));
+    transform: scale(1.06);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Section
+********************************** */
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section > div {
+    flex: 1 0 40%;
+    border: 2px solid #68e29f;
+}
+
+P::before small { 
+    font-size: 0.9rem;
+    color: rgba(66, 246, 255, 0.655);
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer
+********************************** */
+footer > p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+footer > p a:link,
+footer > p a:visited { 
+    color: rgba(255, 255, 255, 0.219);
+ }
