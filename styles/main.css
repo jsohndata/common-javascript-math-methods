@@ -49,7 +49,10 @@ p.caption {
 
 /* Container
 ********************************** */
-.container { padding: 2%; }
+.container { 
+    width: 85%;
+    padding: 2%;
+    margin: 0 auto; }
 
 
 /* Main
