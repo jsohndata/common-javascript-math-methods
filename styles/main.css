@@ -13,10 +13,16 @@ body { background-color: #12262c; transition: 0.31s; }
 ********************************** */
 * { font-family: 'Oxygen', sans-serif; }
 
-.floor, .ceil, .trunc, .round, .random {
-    font-size: calc(16px + 2vw);
+.floor, .ceil, .trunc, .round {
+    font-size: calc(17px + 2vw);
     color:rgba(195, 218, 178, 0.818)
 }
+
+.randomWithInt, .integer {
+    font-size: calc(17px + 0.3vw);
+    color:rgba(195, 218, 178, 0.818)
+}
+
 
 h1 { 
     font-size: calc(23px + 2vw);
@@ -26,12 +32,12 @@ h1 {
 }
 
 h2 { 
-    font-size: calc(19px + 2vw);
+    font-size: calc(18px + 0.1vw);
     font-weight: 700;
     color: rgb(178, 199, 218);
 }
 
-h2 span { font-size: calc(19px + 0.5vw); }
+h2 span { font-size: calc(18px + 0.5vw); }
 
 P { 
     font-size: calc(17px + 2vw);
@@ -39,12 +45,10 @@ P {
 }
 
 p.caption {
-    font-size: 1.0rem;
+    font-size: calc(12px + 0.1vw);
     margin-top: 0.5em;
     font-weight: 500;
 }
-
-
 
 
 /* Container
@@ -52,7 +56,8 @@ p.caption {
 .container { 
     width: 85%;
     padding: 2%;
-    margin: 0 auto; }
+    margin: 0 auto;
+}
 
 
 /* Main
@@ -116,11 +121,13 @@ P::before small {
 /* Footer
 ********************************** */
 footer > p {
-    font-size: 1.1em;
+    font-size: calc(14px + 0.1vw);;
     text-align: center;
+    margin-top: 1.3rem;
 }
 
 footer > p a:link,
 footer > p a:visited { 
     color: rgba(255, 255, 255, 0.219);
- }
+    text-decoration: none;
+}
