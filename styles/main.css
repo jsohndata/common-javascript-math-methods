@@ -14,25 +14,27 @@ body { background-color: #12262c; transition: 0.31s; }
 * { font-family: 'Oxygen', sans-serif; }
 
 .floor, .ceil, .trunc, .round, .random {
-    font-size: 4.0rem;
+    font-size: calc(16px + 2vw);
     color:rgba(195, 218, 178, 0.818)
 }
 
 h1 { 
-    font-size: 2.6rem;
+    font-size: calc(23px + 2vw);
     font-weight: 700;
     color: rgb(246, 246, 246);
     margin-bottom: 30px;
 }
 
 h2 { 
-    font-size: 1.3rem;
+    font-size: calc(19px + 2vw);
     font-weight: 700;
     color: rgb(178, 199, 218);
 }
 
+h2 span { font-size: calc(19px + 0.5vw); }
+
 P { 
-    font-size: 2.2rem;
+    font-size: calc(17px + 2vw);
     color: rgba(66, 246, 255, 0.655);
 }
 
@@ -47,7 +49,7 @@ p.caption {
 
 /* Container
 ********************************** */
-.container { padding: 60px; }
+.container { padding: 2%; }
 
 
 /* Main
@@ -72,13 +74,14 @@ main > div {
 
 main > div,
 section > div {
-    margin: 8px;
     padding: 1.3em;
     border-radius: 6px;
     background-color: #2e3c41;
     transform: scale(1.0);
     transition: transform 0.31s ease-in-out;
 }
+
+h1, main > div, section > div { margin: 8px; }
 
 main > div:hover,
 section > div:hover {
