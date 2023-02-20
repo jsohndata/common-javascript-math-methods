@@ -1,0 +1,7 @@
+{
+  "homepage": "https://jsohndata.github.io/common-javascript-math-methods",
+
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
